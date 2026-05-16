@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 12" fill="none">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="15%" style="stop-color:#00ff41">
+        <animate attributeName="style" values="stop-color:#00ff41;stop-color:#00d4ff;stop-color:#a855f7;stop-color:#00ff41" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#00d4ff">
+        <animate attributeName="style" values="stop-color:#00d4ff;stop-color:#a855f7;stop-color:#00ff41;stop-color:#00d4ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="85%" style="stop-color:#a855f7">
+        <animate attributeName="style" values="stop-color:#a855f7;stop-color:#00ff41;stop-color:#00d4ff;stop-color:#a855f7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <filter id="lineGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="50" y="5" width="800" height="2" rx="1" fill="url(#lineGrad)" filter="url(#lineGlow)"/>
+  <!-- Animated dot -->
+  <circle cx="50" cy="6" r="3" fill="#00ff41" filter="url(#lineGlow)">
+    <animate attributeName="cx" from="50" to="850" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#00ff41;#00d4ff;#a855f7;#00ff41" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

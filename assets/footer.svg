@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 50" fill="none">
+  <defs>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="20%" style="stop-color:#0d1117"/>
+      <stop offset="80%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <filter id="footGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <style>
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); }
+      25% { transform: translateY(-3px); }
+      75% { transform: translateY(3px); }
+    }
+    .footer-text {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 13px;
+    }
+  </style>
+  
+  <rect width="900" height="50" fill="url(#footerGrad)"/>
+  
+  <!-- Left bracket -->
+  <text class="footer-text" x="240" y="30" fill="#6b7280" filter="url(#footGlow)">/*</text>
+  
+  <!-- Visitor text -->
+  <text class="footer-text" x="265" y="30" fill="#00d4ff" filter="url(#footGlow)">Thanks for stopping by!</text>
+  
+  <!-- Star animation -->
+  <text class="footer-text" x="492" y="30" fill="#fbbf24">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    ⭐
+  </text>
+  
+  <!-- Code comment -->
+  <text class="footer-text" x="515" y="30" fill="#00ff41" filter="url(#footGlow)">Let's build something</text>
+  
+  <!-- Right bracket -->
+  <text class="footer-text" x="740" y="30" fill="#6b7280" filter="url(#footGlow)">*/</text>
+</svg>
