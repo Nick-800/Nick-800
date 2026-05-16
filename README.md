@@ -45,7 +45,7 @@ const nick = {
     name: "Sohaib Kamash",
     alias: "Nick-800",
     role: "Full-Stack Developer & Mobile Engineer",
-    location: "🌍 Building from anywhere",
+    location: "Building from anywhere",
     
     code: {
         languages:  ["PHP", "JavaScript", "TypeScript", "Dart", "Python"],
@@ -58,7 +58,7 @@ const nick = {
     },
     
     currentFocus: "Building production-grade web & mobile applications",
-    funFact: "I debug with coffee ☕ and deploy with confidence 🚀"
+    funFact: "I debug with coffee and deploy with confidence"
 };
 ```
 
@@ -71,7 +71,7 @@ const nick = {
 
 <br/>
 
-## `⚡ Tech Arsenal`
+## `> ls ./tech_arsenal/`
 
 <br/>
 
@@ -111,7 +111,7 @@ const nick = {
 
 <br/>
 
-## `📊 GitHub Analytics`
+## `> ./stats --verbose`
 
 <br/>
 
@@ -152,7 +152,7 @@ const nick = {
 
 <br/>
 
-## `🐍 Contribution Snake`
+## `> cat ./contrib_snake.log`
 
 <br/>
 
@@ -169,17 +169,17 @@ const nick = {
 
 <br/>
 
-## `🤝 Connect`
+## `> cat ./contact.cfg`
 
 ```
-╭─────────────────────────────────────────────────────────────╮
-│                                                             │
-│   📧  sohaibkmsh@gmail.com                                  │
-│   🐙  github.com/Nick-800                                   │
-│                                                             │
-│   "Talk is cheap. Show me the code." — Linus Torvalds       │
-│                                                             │
-╰─────────────────────────────────────────────────────────────╯
++-------------------------------------------------------------+
+|                                                             |
+|   mail    sohaibkmsh@gmail.com                              |
+|   github  github.com/Nick-800                               |
+|                                                             |
+|   "Talk is cheap. Show me the code." -- Linus Torvalds      |
+|                                                             |
++-------------------------------------------------------------+
 ```
 
 <br/>
